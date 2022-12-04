@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+body{
+    background-image: url('nature.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+background-attachment: fixed;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom:2px solid whitesmoke;
+    margin-bottom: 100px;
+    box-shadow: 4px 4px 6px whitesmoke;
+    padding:0 70px;
+}
+ul{
+    display: flex;
+}
+
+button{
+    cursor: pointer;
+}
+.left{
+    display: flex;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.ff{
+    font-size: 1.5rem;
+    list-style: none;
+
+}
+a{
+    color:wheat;
+    text-decoration: none;
+    padding :10px;
+margin:5px;
+}
+ul{
+    list-style: none;
+
+}
+.file{
+    height: 6.1rem;
+    width: 6.1rem;  
+}
+.se{
+    margin: 10px;
+    padding:10px;
+    line-height: 40px;
+}
+.request{
+padding:20px;
+border:none;
+margin:1rem;
+font-size: 1.2rem;
+border-radius: 20px;
+background-color: transparent;
+}
+.zoom-call{
+padding: 20px;
+margin-top: 5px;
+border-radius: 20px;
+border:none;
+background-color: transparent;
+
+}
+.img{
+    height: 20px;
+    width: 30px;    
+    font-size: 30px;
+}
+.menu{
+    display: none;
+    cursor: pointer;
+}
+@media only screen and (max-width : 1300px){
+    nav{
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width : 1100px){
+    
+    nav{
+        padding: 0 30px;
+    }
+    .request , .zoom-call{
+        padding:10px;
+    }
+
+}
+
+
+@media only screen and (max-width : 980px){
+    
+.menu{
+    display: block;
+    cursor: pointer;
+    color: white;
+    width: 30px;
+    font-size: 30px;
+    position: absolute;
+    right:30px;
+    margin: -25px auto; 
+   }
+   .right{
+    display: none;
+   }
+/* .ff {
+    background-color: black;
+display: none;
+    height: 450px;
+position: absolute;
+top:120px;
+width: 50vw;
+transition: 0.2s;
+/* overflow: hidden; */
+/* text-align: center; */
+
+/* } */ 
+
+ul{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(6, 124, 124);
+    height: 100vh;
+    left:-100%;
+    top:110px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px;
+    transition: all .5s;
+
+}
+ul.show{
+    left:0;
+}
+
+
+ul li{
+    margin-bottom:50px;
+    
+}
+nav a{
+    font-size:30px;
+}
+}
